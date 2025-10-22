@@ -2,6 +2,80 @@
  * Mobirise v4 theme (https://mobirise.com/)
  * Copyright 2017 Mobirise
  */
+
+/*! Links Banner Container */
+.links-banner {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border-top: 2px solid #00ff00;
+  border-bottom: 2px solid #00ff00; */
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+}
+
+/*! Links Button */
+.links-btn {
+  padding: 10px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.8s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.links-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/*! Sunflower Theme Button */
+.links-btn.btn-sunflower {
+  background: linear-gradient(135deg, #e6c634, #d4a826);
+  color: #4e342e;
+  box-shadow: 0 4px 12px rgba(230, 198, 52, 0.4);
+  border: 2px solid rgba(78, 52, 46, 0.1);
+}
+
+.links-btn.btn-sunflower:hover {
+  box-shadow: 0 6px 16px rgba(230, 198, 52, 0.6);
+}
+
+/*! Cosmic Theme Button */
+.links-btn.btn-cosmic {
+  background: linear-gradient(135deg, #1f1b3d, #1c1b2f);
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(31, 27, 61, 0.6);
+  border: 2px solid rgba(224, 224, 224, 0.2);
+}
+
+.links-btn.btn-cosmic:hover {
+  box-shadow: 0 6px 16px rgba(31, 27, 61, 0.8);
+  border-color: rgba(224, 224, 224, 0.3);
+}
+
+/*! Glass Theme Button */
+.links-btn.btn-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(148, 163, 184, 0.2);
+  color: #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links-btn.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
 section {
   background-color: #eeeeee;
 }
