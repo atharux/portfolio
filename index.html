@@ -54,7 +54,12 @@
         </div>
     </nav>
 </section>
-
+<!-- Links Banner -->
+<div class="links-banner">
+  <a href="https://atharhafiz-links.pages.dev/" id="linksButton" class="links-btn btn-cosmic">
+    Prototypes and Links
+  </a>
+</div>
 <section class="mbr-section content4 cid-qKdfh2jVLR" id="content4-i">
 
 
@@ -476,5 +481,19 @@
 
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+
+	<script>
+  const themes = ['cosmic', 'sunflower', 'glass'];
+  let currentTheme = 0;
+  
+  const linksBtn = document.getElementById('linksButton');
+  
+  function cycleTheme() {
+    currentTheme = (currentTheme + 1) % themes.length;
+    linksBtn.className = `links-btn btn-${themes[currentTheme]}`;
+  }
+  
+  setInterval(cycleTheme, 5000);
+</script>
   </body>
 </html>
